@@ -1,0 +1,39 @@
+# api
+# Returns All Streets
+GET http://localhost:3000/street
+
+### Add New Street
+POST http://localhost:3000/street
+Content-Type: application/json
+
+{
+    "name":"Hakkam Singh Gurudwara",
+    "ward_no":"22",
+    "mark":"gurudwara",
+    "street_no":"15"
+}
+
+### Add a Street with id
+GET http://localhost:3000/street/12
+
+### Updates a street with id
+PUT http://localhost:3000/street/13
+Content-Type: application/json
+
+{
+    "id":"13",
+    "name":"Hakkam Singh",
+    "ward_no":"22",
+    "mark":"",
+    "street_no":"15"
+}
+
+
+### Deletes a street with id
+DELETE http://localhost:3000/street/12
+
+#* Working Routes 
+# GET (indiviual & whole)
+# POST
+# PUT
+# DELETE

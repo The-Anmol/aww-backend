@@ -1,0 +1,106 @@
+
+### All Family Queries
+# street-13
+# house-11
+# family -9
+
+# # Returns All Members
+GET http://localhost:3000/member
+
+
+### Add New Member
+POST http://localhost:3000/member
+Content-Type: application/json
+
+{
+            "name": "lily",
+            "dob": "1999-01-01",
+            "gender": "male",
+            "aadhaar": "123456789321",
+            "mobile": "9878987898",
+            "pension": false,
+            "pension_type": null,
+            "disability": false,
+            "disability_type": null,
+            "disability_proof": false,
+            "category": "SC",
+            "corona_vaccine": true,
+            "corona_vaccine_type": null,
+            "corona_vaccine_dose": null,
+            "family_id": 9,
+            "mother": null,
+            "father": null,
+            "head": true,
+            "injections": null,
+            "house_id":11,
+            "street_id":13,
+            "spouse":null
+}
+
+### Update Member
+PUT http://localhost:3000/member/18
+Content-Type: application/json
+
+{
+            "name": "John ",
+            "dob": "1999-01-01",
+            "gender": "male",
+            "aadhaar": "123456789321",
+            "mobile": "9878987898",
+            "pension": false,
+            "pension_type": null,
+            "disability": false,
+            "disability_type": null,
+            "disability_proof": false,
+            "category": "SC",
+            "corona_vaccine": true,
+            "corona_vaccine_type": null,
+            "corona_vaccine_dose": null,
+            "family_id": 9,
+            "mother": null,
+            "father": null,
+            "head": true,
+            "injections": null,
+            "house_id":11,
+            "street_id":13,
+            "spouse":null
+}
+
+### DELETE member with ID
+DELETE http://localhost:3000/member/16
+
+
+###
+
+# * WOrking Routes 
+# GET (indiviual  && whole)
+# POST
+
+
+
+
+
+
+# id,
+# name,
+# dob,
+# gender,
+# aadhaar,
+# mobile,
+# category,
+# pension,
+# pension_type,
+# disability,
+# disability_type,
+# disability_proof,
+# corona_vaccine,
+# corona_vaccine_type,
+# corona_vaccine_dose,
+# family_id,
+# mother,
+# father,
+# head,
+# injections,
+# house_id,
+# street_id,
+# spouse

@@ -1,0 +1,36 @@
+
+### All Family Queries 
+
+#Returns All Family
+GET http://localhost:3000/house
+
+
+### Add New Family
+POST http://localhost:3000/family
+Content-Type: application/json
+
+{  
+    "house_id":"8",
+    "street_id": 11
+}
+
+### Add a Family with id
+GET http://localhost:3000/family/:id
+
+### Updates a street with id
+PUT http://localhost:3000/family/:id
+
+
+### Deletes a street with id
+DELETE http://localhost:3000/family/:id
+
+
+
+
+
+
+# *Working Routes
+# GET (indiviual & whole)
+# POST
+# PUT
+# DELETE
